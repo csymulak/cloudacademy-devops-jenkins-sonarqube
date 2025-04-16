@@ -6,6 +6,7 @@ node {
     sh "${GRADLE_HOME}/bin/gradle tasks"
 
     stage('prep') {
+        echo "https://github.com/csymulak/cloudacademy-devops-webapp.git indirilecek"
         git url: 'https://github.com/csymulak/cloudacademy-devops-webapp.git'                
     }
 
